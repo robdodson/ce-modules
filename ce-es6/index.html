@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <script src="bower_components/traceur/traceur.js"></script>
+    <script src="bower_components/es6-module-loader/dist/es6-module-loader.js"></script>
+  </head>
+  <body>
+    
+    <script>
+      System.import('main');
+    </script>
+    
+    <x-foo></x-foo>
+
+    <script>
+      console.log('is moment undefined in index.html?', typeof moment == 'undefined');
+    </script>
+    
+  </body>
+</html>
